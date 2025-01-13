@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
+import image1 from "../assets/paes_outing2.jpg";
+import image2 from "../assets/paes_outing1.jpg";
+import image3 from "../assets/paes_outing3.jpg";
+import image4 from "../assets/paes_staffs.jpg";
+import image5 from "../assets/paes_computer_lag1.jpg";
 
-const images = [
-  "./src/assets/paes_outing2.jpg", // Replace with actual image paths
-  "./src/assets/paes_outing1.jpg",
-  "./src/assets/paes_outing3.jpg",
-  "./src/assets/paes_staffs.jpg",
-  "./src/assets/paes_computer_lag1.jpg",
-];
+const images = [image1, image2, image3, image4, image5];
 
 export const Cta = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -58,9 +57,6 @@ export const Cta = () => {
             &#10095; {/* Right arrow */}
           </button>
         </div>
-
-        {/* Add More Images Button */}
-       
       </div>
     </section>
   );
