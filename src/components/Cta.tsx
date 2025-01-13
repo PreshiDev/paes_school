@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Button } from "./ui/button";
 
 const images = [
   "./src/assets/paes_outing2.jpg", // Replace with actual image paths
@@ -61,14 +60,7 @@ export const Cta = () => {
         </div>
 
         {/* Add More Images Button */}
-        {/* <div className="mt-8">
-          <Button
-            onClick={() => alert("Add more pictures here!")}
-            variant="outline"
-          >
-            Add More Pictures
-          </Button>
-        </div> */}
+       
       </div>
     </section>
   );

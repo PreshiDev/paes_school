@@ -1,7 +1,5 @@
-import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
 import { HeroCards } from "./HeroCards";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const Hero = () => {
   return (
@@ -29,9 +27,6 @@ export const Hero = () => {
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center lg:justify-start">
-          {/* <Button className="w-full md:w-auto px-6 py-3 text-lg">
-            Get Started
-          </Button> */}
           <a
             rel="noreferrer noopener"
             href="https://wa.me/+2348132872664"
