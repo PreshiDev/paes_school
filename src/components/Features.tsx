@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import image from "../assets/istockphoto-518275278-612x612.jpg";
+import image3 from "../assets/istockphoto-925320070-612x612.jpg";
+import image4 from "../assets/istockphoto-1373258176-612x612.jpg";
 
 interface FeatureProps {
   title: string;
@@ -18,35 +18,35 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Holistic Learning Approach",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "At PAES Comprehensive Academy, we focus on the overall development of students, combining academics, arts, and extracurricular activities.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Modern Facilities",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Our school is equipped with state-of-the-art classrooms, science labs, libraries, and digital tools to enhance the learning experience.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Dedicated Faculty",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Our experienced and passionate teachers are committed to nurturing every student's potential and fostering a love for learning.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Student-Centered Learning",
+  "Science and Technology",
+  "Sports and Athletics",
+  "Cultural Activities",
+  "Community Outreach",
+  "Parent Engagement",
+  "Scholarships",
+  "Digital Classrooms",
+  "Personalized Mentorship",
 ];
 
 export const Features = () => {
@@ -56,9 +56,9 @@ export const Features = () => {
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        What Makes Us{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          Stand Out
         </span>
       </h2>
 
@@ -87,7 +87,7 @@ export const Features = () => {
             <CardFooter>
               <img
                 src={image}
-                alt="About feature"
+                alt="Feature illustration"
                 className="w-[200px] lg:w-[300px] mx-auto"
               />
             </CardFooter>

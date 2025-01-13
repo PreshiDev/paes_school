@@ -13,43 +13,40 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "What are the school admission requirements?",
+    answer:
+      "To apply for admission, students must submit a completed application form, birth certificate, recent school reports, and a valid ID.",
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+    question: "What extracurricular activities does the school offer?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Our school offers a variety of extracurricular activities, including sports, music, drama, and clubs focused on science, technology, and arts.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+    question: "How can I contact my child's teacher?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+      "You can reach your child's teacher via email, phone, or by scheduling a meeting through our online parent-teacher scheduling system.",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "What is the school's policy on holidays?",
+    answer:
+      "The school observes public holidays, as well as additional breaks during the mid-term and end of term. A full holiday schedule is provided at the start of each term.",
     value: "item-4",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
+    question: "How does the school support students with special needs?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "We provide personalized support for students with special needs, including resource teachers, speech therapists, and counselors to assist with learning and development.",
     value: "item-5",
   },
 ];
 
 export const FAQ = () => {
   return (
-    <section
-      id="faq"
-      className="container py-24 sm:py-32"
-    >
+    <section id="faq" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
         Frequently Asked{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
@@ -57,20 +54,10 @@ export const FAQ = () => {
         </span>
       </h2>
 
-      <Accordion
-        type="single"
-        collapsible
-        className="w-full AccordionRoot"
-      >
+      <Accordion type="single" collapsible className="w-full AccordionRoot">
         {FAQList.map(({ question, answer, value }: FAQProps) => (
-          <AccordionItem
-            key={value}
-            value={value}
-          >
-            <AccordionTrigger className="text-left">
-              {question}
-            </AccordionTrigger>
-
+          <AccordionItem key={value} value={value}>
+            <AccordionTrigger className="text-left">{question}</AccordionTrigger>
             <AccordionContent>{answer}</AccordionContent>
           </AccordionItem>
         ))}

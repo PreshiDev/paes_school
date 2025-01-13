@@ -1,37 +1,74 @@
+import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 
+const images = [
+  "./src/assets/paes_outing2.jpg", // Replace with actual image paths
+  "./src/assets/paes_outing1.jpg",
+  "./src/assets/paes_outing3.jpg",
+  "./src/assets/paes_staffs.jpg",
+  "./src/assets/paes_computer_lag1.jpg",
+];
+
 export const Cta = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change slide every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
   return (
     <section
-      id="cta"
+      id="gallery"
       className="bg-muted/50 py-16 my-24 sm:my-32"
     >
-      <div className="container lg:grid lg:grid-cols-2 place-items-center">
-        <div className="lg:col-start-1">
-          <h2 className="text-3xl md:text-4xl font-bold ">
-            All Your
-            <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              {" "}
-              Ideas & Concepts{" "}
-            </span>
-            In One Interface
-          </h2>
-          <p className="text-muted-foreground text-xl mt-4 mb-8 lg:mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-            beatae. Ipsa tempore ipsum iste quibusdam illum ducimus eos. Quasi,
-            sed!
-          </p>
+      <div className="container text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8">
+          School <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">Gallery</span>
+        </h2>
+        <div className="relative max-w-4xl mx-auto">
+          <div className="overflow-hidden rounded-lg">
+            <img
+              src={images[currentIndex]}
+              alt={`Slide ${currentIndex + 1}`}
+              className="w-full h-[400px] object-cover transition-all duration-700"
+            />
+          </div>
+
+          {/* Navigation Controls */}
+          <button
+            onClick={handlePrev}
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow-md"
+          >
+            &#10094; {/* Left arrow */}
+          </button>
+          <button
+            onClick={handleNext}
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow-md"
+          >
+            &#10095; {/* Right arrow */}
+          </button>
         </div>
 
-        <div className="space-y-4 lg:col-start-2">
-          <Button className="w-full md:mr-4 md:w-auto">Request a Demo</Button>
+        {/* Add More Images Button */}
+        {/* <div className="mt-8">
           <Button
+            onClick={() => alert("Add more pictures here!")}
             variant="outline"
-            className="w-full md:w-auto"
           >
-            View all features
+            Add More Pictures
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

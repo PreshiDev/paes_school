@@ -1,4 +1,4 @@
-import { LogoIcon } from "./Icons";
+import LogoIcon from "../assets/icon1.png";
 
 export const Footer = () => {
   return (
@@ -12,8 +12,12 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-            <LogoIcon />
-            ShadcnUI/React
+            <img
+                src={LogoIcon}
+                alt="School Logo"
+                className="h-[40px] w-auto object-contain rounded-lg"
+              />
+            Paes Comprehensive Academy
           </a>
         </div>
 
@@ -152,14 +156,14 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          &copy; 2025 Copyrights by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
             href="https://www.linkedin.com/in/leopoldo-miranda/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            Paes Comprehensive Academy
           </a>
         </h3>
       </section>

@@ -1,5 +1,5 @@
-import { Statistics } from "./Statistics";
-import pilot from "../assets/pilot.png";
+// import { Statistics } from "./Statistics";
+import pilot from "../assets/paes_outing1.jpg";
 
 export const About = () => {
   return (
@@ -11,7 +11,7 @@ export const About = () => {
         <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
           <img
             src={pilot}
-            alt=""
+            alt="Pilot illustration"
             className="w-[300px] object-contain rounded-lg"
           />
           <div className="bg-green-0 flex flex-col justify-between">
@@ -20,18 +20,35 @@ export const About = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   About{" "}
                 </span>
-                Company
+                PAES Comprehensive Academy
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                PAES Comprehensive Academy is a prestigious private educational 
+                institution located in Nigeria, dedicated to nurturing young minds 
+                and fostering holistic development. Catering to both primary and 
+                secondary school students, our mission is to provide a world-class 
+                education that empowers students to achieve excellence in academics, 
+                character, and leadership.
+              </p>
+              <p className="text-xl text-muted-foreground mt-4">
+                At PAES Comprehensive Academy, we believe that education is the 
+                foundation for success, and our motto, 
+                <strong> "I Will Make It," </strong> embodies the spirit of 
+                determination, resilience, and self-belief that we instill in every 
+                student. This guiding principle drives our commitment to creating an 
+                environment where every learner is inspired to dream big, work hard, 
+                and excel in all areas of life.
+              </p>
+              <p className="text-xl text-muted-foreground mt-4">
+                Our curriculum is designed to meet international standards while 
+                aligning with the Nigerian educational framework. With highly qualified 
+                teachers, modern teaching methodologies, and state-of-the-art facilities, 
+                we ensure that our students excel academically while also developing 
+                strong moral values and leadership qualities.
               </p>
             </div>
 
-            <Statistics />
+            {/* <Statistics /> */}
           </div>
         </div>
       </div>
