@@ -40,14 +40,6 @@ const routeList: RouteProps[] = [
     href: "#",
     label: "E-portal",
   },
-  // {
-  //   href: "#testimonials",
-  //   label: "Testimonials",
-  // },
-  // {
-  //   href: "#pricing",
-  //   label: "Pricing",
-  // },
   {
     href: "#faq",
     label: "FAQ",
