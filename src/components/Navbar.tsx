@@ -37,7 +37,7 @@ const routeList: RouteProps[] = [
     label: "Features",
   },
   {
-    href: "#",
+    href: "https://edstream.com.ng/accounts/login/",
     label: "E-portal",
   },
   {
