@@ -10,7 +10,7 @@ import {
 // import { Facebook, Instagram, Linkedin } from "lucide-react";
 import image1 from "../assets/miss-ifeoma.jpg";
 import image2 from "../assets/mrs-oluwatoyin.jpg";
-import image3 from "../assets/mrs-hannah.jpg";
+import image3 from "../assets/image3.jpg";
 import image4 from "../assets/mrs-victoria.jpg";
 
 interface TeamProps {
@@ -48,7 +48,7 @@ const teamList: TeamProps[] = [
   {
     imageUrl: image2,
     name: "Mrs Oluwatoyin Bamisebi",
-    position: "Coordinator (Junior Secondary)",
+    position: "VP Academic",
     // socialNetworks: [
     //   {
     //     name: "Linkedin",
@@ -66,8 +66,8 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl: image3,
-    name: "Mrs Hannah Adebayo - Ag",
-    position: "Principal (Junior Secondary)",
+    name: "Mrs Akinbola Moronke Ruth",
+    position: "VP Administration",
     // socialNetworks: [
     //   {
     //     name: "Linkedin",
