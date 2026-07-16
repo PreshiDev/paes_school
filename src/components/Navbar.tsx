@@ -12,8 +12,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-// import { buttonVariants } from "./ui/button";
-import { Menu } from "lucide-react";
+// import { buttonVariants } from "./ui/button";  // Keep this - it's used in className
+import { Menu } from "lucide-react";  // Removed X from this import
 import { ModeToggle } from "./mode-toggle";
 import LogoIcon from "../assets/icon1.png";
 
