@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Quote } from "lucide-react";
-import image1 from "../assets/miss-ifeoma.jpg";
+// import image1 from "../assets/miss-ifeoma.jpg";
 import image2 from "../assets/mrs-oluwatoyin.jpg";
 import image3 from "../assets/image3.jpg";
 import image4 from "../assets/Mrs-Adeyemi-Motunrayo.jpg";
